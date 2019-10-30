@@ -62,7 +62,7 @@ class Flights extends Component {
               <Accordion.Toggle
                 as={Card.Header}
                 eventKey="0"
-              ></Accordion.Toggle>
+              >From: {departure} To: {arrive}</Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <StyledWrapperLink to="/checkout">
                   <Card.Body>
@@ -93,10 +93,10 @@ class Flights extends Component {
                                 </Moment>
                               </StyledFlightInfoTime>
                               <StyledFlightInfoAirport>
-                                {element.origin}
+                                {element.destination}
                               </StyledFlightInfoAirport>
                               <StyledFlightInfoAirport>
-                                {arrive}
+                                {departure}
                               </StyledFlightInfoAirport>
                             </StyledFlightInfoWrapper>
                           </Col>
@@ -115,10 +115,10 @@ class Flights extends Component {
                                 </Moment>
                               </StyledFlightInfoTime>
                               <StyledFlightInfoAirport>
-                                {element.destination}
+                                {element.origin}
                               </StyledFlightInfoAirport>
                               <StyledFlightInfoAirport>
-                                {departure}
+                                {arrive}
                             </StyledFlightInfoAirport>
                             </StyledFlightInfoWrapper>
                           </Col>
@@ -154,7 +154,7 @@ class Flights extends Component {
               <Accordion.Toggle
                 as={Card.Header}
                 eventKey="0"
-              >From: {arrive} To: {departure}</Accordion.Toggle>
+              >From: {departure} To: {arrive} </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
                   <Row>
@@ -184,10 +184,10 @@ class Flights extends Component {
                               </Moment>
                             </StyledFlightInfoTime>
                             <StyledFlightInfoAirport>
-                              {element.origin}
+                              {element.destination}
                             </StyledFlightInfoAirport>
                             <StyledFlightInfoAirport>
-                              {arrive}
+                              {departure}
                             </StyledFlightInfoAirport>
                           </StyledFlightInfoWrapper>
                         </Col>
@@ -206,10 +206,10 @@ class Flights extends Component {
                               </Moment>
                             </StyledFlightInfoTime>
                             <StyledFlightInfoAirport>
-                              {element.destination}
+                              {element.origin}
                             </StyledFlightInfoAirport>
                             <StyledFlightInfoAirport>
-                              {departure}
+                              {arrive}
                             </StyledFlightInfoAirport>
                           </StyledFlightInfoWrapper>
                         </Col>
